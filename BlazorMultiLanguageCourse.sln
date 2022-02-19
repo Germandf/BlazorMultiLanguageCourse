@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMultiLanguageCourse.Client", "src\Client\BlazorMultiLanguageCourse.Client.csproj", "{BBC516EA-3E1D-4605-90AD-6C4253A98816}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorMultiLanguageCourse.Shared", "src\Shared\BlazorMultiLanguageCourse.Shared.csproj", "{1B2C7363-6EC1-49F8-904C-5C016A5F9A09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBC516EA-3E1D-4605-90AD-6C4253A98816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC516EA-3E1D-4605-90AD-6C4253A98816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC516EA-3E1D-4605-90AD-6C4253A98816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC516EA-3E1D-4605-90AD-6C4253A98816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2C7363-6EC1-49F8-904C-5C016A5F9A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2C7363-6EC1-49F8-904C-5C016A5F9A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2C7363-6EC1-49F8-904C-5C016A5F9A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2C7363-6EC1-49F8-904C-5C016A5F9A09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CB3400D-D9EC-4BAA-9238-E8B75DF13BC6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿@page "/"
+@inject IStringLocalizer<Resource> _localizer
+
+<PageTitle>Index</PageTitle>
+
+<section class="mb-5">
+    <h1>@_localizer["index.Greeting"]</h1>
+
+    @_localizer["index.Welcome"]
+</section>
+
+<section class="my-5">
+    <p>@_localizer["index.Date"]: @DateTime.Today</p>
+
+    <p>@_localizer["index.Amount"]: @(123456.78m.ToString("C"))</p>
+</section>
+
+<section class="my-5">
+    <PersonForm />
+</section>

@@ -1,0 +1,36 @@
+﻿@inject IJSRuntime _js
+@inject NavigationManager _navigationManager
+
+<strong class="me-2">Culture:</strong>
+<select class="form-select" style="max-width: 200px;" @bind="_selectedCulture">
+    @foreach (var item in _cultures)
+    {
+        <option value="@item">@item.DisplayName</option>
+    }
+</select>
+
+@code {
+
+    private CultureInfo[] _cultures = new[]
+    {
+        new CultureInfo("en-US"),
+        new CultureInfo("es-AR"),
+        new CultureInfo("es"),
+        new CultureInfo("fr-FR"),
+    };
+
+    private CultureInfo _selectedCulture
+    {
+        get => CultureInfo.CurrentUICulture;
+        set
+        {
+            if(CultureInfo.CurrentUICulture != value)
+            {
+                var jsInProcessRuntime = (IJSInProcessRuntime)_js;
+                jsInProcessRuntime.InvokeVoid("culture.set", value.Name);
+                _navigationManager.NavigateTo(_navigationManager.Uri, true);
+            }
+        }
+    }
+
+}

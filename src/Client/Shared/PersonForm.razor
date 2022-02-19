@@ -1,0 +1,21 @@
+﻿@inject IStringLocalizer<Resource> _localizer
+
+<h3>@_localizer["personForm"]</h3>
+
+<EditForm Model="_person" style="max-width: 400px;">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label class="form-label">@_localizer["name"]:</label>
+        <InputText class="form-control" @bind-Value="_person.Name" />
+        <ValidationMessage For="() => _person.Name" />
+    </div>
+    <div class="text-end">
+        <button class="btn btn-primary" type="submit">@_localizer["submit"]</button>
+    </div>
+</EditForm>
+
+@code {
+
+    Person _person = new();
+
+}
